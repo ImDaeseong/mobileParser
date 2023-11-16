@@ -1,7 +1,6 @@
 package com.daeseong.htmlParser;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
@@ -18,7 +17,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         webSettings.setSupportZoom(false);//확대 축소 기능
         webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);//캐시모드를 사용하지 않고 네트워크를 통해서만 호출
-        webSettings.setAppCacheEnabled(false);//앱 내부 캐시 사용 여부 설정
+        //webSettings.setAppCacheEnabled(false);//앱 내부 캐시 사용 여부 설정
 
         webSettings.setUseWideViewPort(true);//웹뷰에 맞게 출력하기
         webSettings.setLoadWithOverviewMode(true);
